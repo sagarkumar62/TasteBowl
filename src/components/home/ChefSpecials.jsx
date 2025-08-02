@@ -27,7 +27,9 @@ const ChefSpecials = () => {
           >
             <div className="relative group h-48 md:h-56 overflow-hidden">
               <img
-                src={dish.image}
+                src={typeof dish.image === 'string' && dish.image.startsWith('/src/assets/')
+                  ? dish.image.replace('/src/assets/', '/assets/')
+                  : dish.image}
                 alt={dish.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

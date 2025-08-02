@@ -4,25 +4,23 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './AnimatedHome.css';
 
 // ✅ Import images from src/assets
-import butterChicken from '/src/assets/Butter Chicken.png';
-import margheritaPizza from '/src/assets/Margherita Pizza.png';
-import kungPao from '/src/assets/Kung Pao.png';
+
 
 const CUISINES = ['Indian', 'Italian', 'Chinese'];
 
 const SLIDES = [
   {
-    img: butterChicken,
+    img: '/assets/Butter Chicken.png',
     title: 'Butter Chicken',
     desc: 'Creamy, spiced, and rich Indian classic.'
   },
   {
-    img: margheritaPizza,
+    img: '/assets/Margherita Pizza.png',
     title: 'Margherita Pizza',
     desc: 'Wood-fired, fresh basil, mozzarella, and tomatoes.'
   },
   {
-    img: kungPao,
+    img: '/assets/Kung Pao.png',
     title: 'Kung Pao Chicken',
     desc: 'Spicy, sweet, and savory Chinese favorite.'
   }
