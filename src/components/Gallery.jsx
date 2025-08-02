@@ -5,7 +5,7 @@ import { FaInstagram, FaHeart, FaChevronLeft, FaChevronRight } from 'react-icons
 // Example static images (replace with your own or fetch from API)
 const images = [
   {
-    src: '/src/assets/gallery/Pasta.jpg',
+    src: '/assets/gallery/Pasta.jpg',
     alt: 'Delicious Pasta',
     likes: 120,
     description: 'Creamy Alfredo Pasta',
@@ -13,7 +13,7 @@ const images = [
     hashtags: ['#Pasta', '#Italian', '#FreshOnTheFeed'],
   },
   {
-    src: '/src/assets/gallery/Juicy Gourmet Burger.jpg',
+    src: '/assets/gallery/Juicy Gourmet Burger.jpg',
     alt: 'Gourmet Burger',
     likes: 98,
     description: 'Juicy Gourmet Burger',
@@ -21,7 +21,7 @@ const images = [
     hashtags: ['#Burger', '#Grill', '#Yum'],
   },
   {
-    src: '/src/assets/gallery/Assorted Sushi Platter.jpg',
+    src: '/assets/gallery/Assorted Sushi Platter.jpg',
     alt: 'Sushi Platter',
     likes: 143,
     description: 'Assorted Sushi Platter',
@@ -29,7 +29,7 @@ const images = [
     hashtags: ['#Sushi', '#Japanese', '#FreshOnTheFeed'],
   },
   {
-    src: '/src/assets/gallery/Dessert.jpg',
+    src: '/assets/gallery/Dessert.jpg',
     alt: 'Dessert',
     likes: 87,
     description: 'Chocolate Lava Cake',
