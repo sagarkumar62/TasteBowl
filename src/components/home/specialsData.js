@@ -49,7 +49,7 @@ const specialsData = [
     name: 'Mexican Fiesta Bowl',
     description: 'A vibrant bowl of rice, beans, salsa, guacamole, and grilled veggies.',
     price: '13.75',
-    image: '/src/assets/specials/Colorful Fiesta Bowl.png',
+    image: '/src/assets/specials/ColorfulFiestaBowl.png',
     tags: ['New'],
     isSpecial: false,
     cta: 'View Details',
