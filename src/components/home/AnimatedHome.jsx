@@ -3,20 +3,26 @@ import { motion } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './AnimatedHome.css';
 
+// ✅ Import images from src/assets
+import butterChicken from '/src/assets/Butter Chicken.png';
+import margheritaPizza from '/src/assets/Margherita Pizza.png';
+import kungPao from '/src/assets/Kung Pao.png';
+
 const CUISINES = ['Indian', 'Italian', 'Chinese'];
+
 const SLIDES = [
   {
-    img: '/src/assets/Butter Chicken.png',
+    img: butterChicken,
     title: 'Butter Chicken',
     desc: 'Creamy, spiced, and rich Indian classic.'
   },
   {
-    img: '/src/assets/Margherita Pizza.png',
+    img: margheritaPizza,
     title: 'Margherita Pizza',
     desc: 'Wood-fired, fresh basil, mozzarella, and tomatoes.'
   },
   {
-    img: '/src/assets/Kung Pao.png',
+    img: kungPao,
     title: 'Kung Pao Chicken',
     desc: 'Spicy, sweet, and savory Chinese favorite.'
   }
@@ -44,7 +50,10 @@ function Typewriter({ words, speed = 120, pause = 1200 }) {
   }, [subIndex, index, deleting, words, speed, pause]);
 
   return (
-    <span className="text-primary font-bold">{words[index].substring(0, subIndex)}<span className="blinking-cursor">|</span></span>
+    <span className="text-primary font-bold">
+      {words[index].substring(0, subIndex)}
+      <span className="blinking-cursor">|</span>
+    </span>
   );
 }
 
@@ -72,7 +81,6 @@ function DishCarousel() {
   const next = () => setCurrent((prev) => (prev + 1) % SLIDES.length);
   const prev = () => setCurrent((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
-  // Swipe support
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
